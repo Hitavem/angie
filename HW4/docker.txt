@@ -1,0 +1,5 @@
+root@ubuntu24:/home/hadmin# docker ps -a
+CONTAINER ID   IMAGE                 COMMAND                  CREATED          STATUS          PORTS                      NAMES
+8a5f1c1a7cf9   vscoder/webdebugger   "gunicorn -w 1 --bin…"   22 minutes ago   Up 22 minutes   127.0.0.1:9082->8080/tcp   busy_tharp
+39ce08a2fbd0   vscoder/webdebugger   "gunicorn -w 1 --bin…"   22 minutes ago   Up 22 minutes   127.0.0.1:9081->8080/tcp   zealous_hoover
+b9fd16c66311   vscoder/webdebugger   "gunicorn -w 1 --bin…"   23 minutes ago   Up 23 minutes   127.0.0.1:9080->8080/tcp   determined_golick
