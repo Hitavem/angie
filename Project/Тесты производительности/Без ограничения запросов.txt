@@ -1,0 +1,30 @@
+root@nb-203754:/home/hitavem# h2load  -n 5000 -c 100 -t 4 --alpn-list=h2  https://10.31.78.23/
+starting benchmark...
+spawning thread #0: 25 total client(s). 1250 total requests
+spawning thread #1: 25 total client(s). 1250 total requests
+spawning thread #2: 25 total client(s). 1250 total requests
+spawning thread #3: 25 total client(s). 1250 total requests
+TLS Protocol: TLSv1.3
+Cipher: TLS_AES_128_GCM_SHA256
+Server Temp Key: X25519 253 bits
+Application protocol: h2
+progress: 10% done
+progress: 20% done
+progress: 30% done
+progress: 40% done
+progress: 50% done
+progress: 60% done
+progress: 70% done
+progress: 80% done
+progress: 90% done
+progress: 100% done
+
+finished in 28.13s, 177.76 req/s, 1.83MB/s
+requests: 5000 total, 5000 started, 5000 done, 5000 succeeded, 0 failed, 0 errored, 0 timeout
+status codes: 5000 2xx, 0 3xx, 0 4xx, 0 5xx
+traffic: 51.54MB (54039900) total, 644.53KB (660000) headers (space savings 34.65%), 50.73MB (53195000) data
+                     min         max         mean         sd        +/- sd
+time for request:     7.88ms       1.70s    524.22ms    372.13ms    65.80%
+time for connect:    10.08ms    781.04ms    361.41ms    240.85ms    56.00%
+time to 1st byte:    45.90ms       1.25s    604.95ms    349.31ms    57.00%
+req/s           :       1.78        2.40        1.89        0.11    82.00%
